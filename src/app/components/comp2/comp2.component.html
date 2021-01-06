@@ -1,0 +1,57 @@
+<div id="a1">
+
+  <h3>Lists of Posts</h3>
+
+  <div *ngIf="!(prop2.length > 0)">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+         style="margin: auto; background: none; display: block; shape-rendering: auto;" width="200px" height="200px"
+         viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+      <circle cx="50" cy="50" fill="none" stroke="#1d0e0b" stroke-width="10" r="35"
+              stroke-dasharray="164.93361431346415 56.97787143782138">
+        <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s"
+                          values="0 50 50;360 50 50" keyTimes="0;1"></animateTransform>
+      </circle>
+    </svg>
+  </div>
+
+  <table class="table" *ngIf="prop2.length > 0">
+
+    <thead>
+    <tr>
+      <th>sr no</th>
+      <th>title</th>
+      <th>body</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr *ngFor="let a of prop3" [@animation1]="'state1'">
+      <td>{{a.id}}</td>
+      <td>{{a.title}}</td>
+      <td>{{a.body}}</td>
+    </tr>
+    </tbody>
+
+  </table>
+
+  <div class="pagination" *ngIf="prop2.length > 0">
+    <button [ngStyle]="{cursor: 'pointer'}" [disabled]="prop5 === 0" (click)="prop8()" class="btn">Previous</button>
+    <button [ngStyle]="{cursor: 'pointer'}" [disabled]="prop6 >= prop2.length" (click)="prop4()" class="btn">Next
+    </button>
+  </div>
+
+</div>
+
+<div class="modal-wrapper" *ngIf="prop1.prop1">
+
+  <div class="overlay"></div>
+
+  <div class="modal" [@animation2]="'state2'">
+    <p>are you sure you want to leave?</p>
+    <div class="modal-footer">
+      <button type="button" class="btn" (click)="prop10()" [routerLink]="['/']">OK</button>
+      <button type="button" class="btn" (click)="prop1.prop1 = false">cancel</button>
+    </div>
+  </div>
+
+</div>

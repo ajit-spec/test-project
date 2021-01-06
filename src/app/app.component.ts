@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {Service1Service} from './services/service1.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app1';
+  prop1: Service1Service;
+
+  constructor(param1: Service1Service) {
+    this.prop1 = param1;
+  }
 }

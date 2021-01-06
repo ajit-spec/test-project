@@ -5,12 +5,10 @@
   box-sizing: border-box;
 }
 
-html {
-
-  @media (max-width: 575px) {
+@media (max-width: 575px) {
+  html {
     font-size: 12px;
   }
-
 }
 
 .form-group {
@@ -20,17 +18,16 @@ html {
 .form-control {
   display: block;
   width: 100%;
-  padding: .375rem .75rem;
+  padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
   color: #495057;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
-
-  &:focus {
-    outline: 0;
-  }
+}
+.form-control:focus {
+  outline: 0;
 }
 
 .text-danger {
@@ -48,20 +45,18 @@ html {
   white-space: nowrap;
   vertical-align: middle;
   border: 1px solid #007bff;
-  padding: .375rem .75rem;
+  padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
   color: #fff;
   background-color: #007bff;
   cursor: pointer;
-
-  &:focus {
-    outline: 0;
-  }
-
-  &:disabled {
-    opacity: 0.65;
-  }
+}
+.btn:focus {
+  outline: 0;
+}
+.btn:disabled {
+  opacity: 0.65;
 }
 
 label {
@@ -69,7 +64,7 @@ label {
   display: block;
 }
 
-table{
+table {
   border-collapse: collapse;
 }
 
@@ -80,7 +75,7 @@ table{
 }
 
 .table td, .table th {
-  padding: .75rem;
+  padding: 0.75rem;
   vertical-align: top;
   border-top: 1px solid #dee2e6;
 }
@@ -89,3 +84,5 @@ table{
   vertical-align: bottom;
   border-bottom: 2px solid #dee2e6;
 }
+
+/*# sourceMappingURL=styles.css.map */

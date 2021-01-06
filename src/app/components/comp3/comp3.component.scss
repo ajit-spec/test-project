@@ -1,0 +1,19 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff;
+  color: #fff;
+  padding: 1rem;
+
+  .info-wrapper {
+    display: flex;
+    align-items: center;
+
+    a {
+      margin-left: 2rem;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}

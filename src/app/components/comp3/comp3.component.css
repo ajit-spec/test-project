@@ -1,0 +1,19 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff;
+  color: #fff;
+  padding: 1rem;
+}
+header .info-wrapper {
+  display: flex;
+  align-items: center;
+}
+header .info-wrapper a {
+  margin-left: 2rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=comp3.component.css.map */
